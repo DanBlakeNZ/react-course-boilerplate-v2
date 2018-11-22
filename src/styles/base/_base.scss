@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5% //of its current size
+}
+
+// So why 62.5%? Because 16*.625 = 10, so now we can work with rems in a base 10 system just like pixels. eg 2.2 rems = 22px.
+// 1rem equals 16px so set below in body.
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $m-size;
+    line-height: 1.6;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+.is-active{
+    font-weight: bold;
+}
